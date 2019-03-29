@@ -1,6 +1,6 @@
 # Assignment 1 - ReactJS app.
 
-Name: ... Jeffy Abraham...
+Name:  Jeffy Abraham...
 
 ## Overview.
 ...... Its a web app which lets you create and manage your own photo album ........
@@ -25,7 +25,9 @@ All the required node modules are saved in package.json, so no seperate installa
 
 
 ## UI Design.
-
+![alt text](react01.PNG)
+![alt text](React02.PNG)
+![alt text](react03.PNG)
 
 ## Routing.
 Public Views
