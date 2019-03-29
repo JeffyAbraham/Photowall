@@ -28,6 +28,8 @@ All the required node modules are saved in package.json, so no seperate installa
 ![alt text](react01.PNG)
 ![alt text](React02.PNG)
 ![alt text](react03.PNG)
+![alt text](Signup.PNG)
+![alt text](Login.PNG)
 
 ## Routing.
 Public Views
