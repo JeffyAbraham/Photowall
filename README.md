@@ -1,6 +1,6 @@
 # Assignment 1 - ReactJS app.
 
-Name:  Jeffy Abraham...
+Name:  Jeffy Abraham
 
 ## Overview.
  A web app which lets you create and manage your own photo album 
