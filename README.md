@@ -3,10 +3,10 @@
 Name:  Jeffy Abraham...
 
 ## Overview.
-...... Its a web app which lets you create and manage your own photo album ........
+ A web app which lets you create and manage your own photo album 
 
 
- . . . . . List of user features . . . . 
+## List of user features 
  + Users signup and login
  + Users can add images
  + Users can add descriptions for Images
