@@ -16,8 +16,7 @@ Name:  Jeffy Abraham
 
 ## Installation requirements.
 
-All the required node modules are saved in package.json, so no seperate installation of modules required. To run the app first start the local JSON server and then start the npm
-
+All the required node modules are saved in package.json, so no seperate installation of modules required. 
 ## Data Model Design.
 
 
@@ -48,7 +47,7 @@ Private Views
 ## Extra features
 
 + Use of state management tools(Redux)
-+ Use of firebase database to store data
++ Use of firebase for authentication
 + Use of firebase for achieving persistence
 
 
