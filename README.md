@@ -21,7 +21,7 @@ All the required node modules are saved in package.json, so no seperate installa
 ## Data Model Design.
 
 
-![alt text](Rapp1/Capture.PNG)
+![alt text](Firebase.PNG)
         
       
 
