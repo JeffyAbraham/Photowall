@@ -9,6 +9,6 @@ var config = {
     storageBucket: "storywall-c96a0.appspot.com",
     messagingSenderId: "1051588951370"
   }
-  firebase.initializeApp(config)
+  const fire=firebase.initializeApp(config)
   const database=firebase.database()
-  export {database}
+  export {database,fire}

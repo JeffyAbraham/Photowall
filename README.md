@@ -19,9 +19,12 @@ Name: Jeffy Abraham
 . . . .  All the required node modules are saved in package.json, so no seperate installation of modules required. 
 
 ## Data Model Design.
+ 
 
 
-![][
+![
+ 
+][
  
 ]
 
@@ -45,6 +48,7 @@ A screenshot showing the component stories from Storybook
  
 
 
+ 
 
 
 

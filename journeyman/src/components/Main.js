@@ -4,43 +4,87 @@ import Home from './Home';//aka photwall
 import Add from './Add';
 import {Route} from 'react-router-dom'
 import {delPicture, startLoadingPost,startLoadingcomments} from '../redux/action'
-import {addPicture}from '../redux/action'
-import {addComment} from '../redux/action'
+import {fire} from '../database/config'
 import Pop from './Pop';
+import Sign from './sign';
+import Signup from './signup';
 
 
 
 class Main extends Component {
-  constructor()
+  constructor(props)
     {
+      super(props)
+      this.state={
+          user:{}
+      }
 
-      super()
+     
 
 
     }
     componentDidMount()
 
     {
+      this.authListener();
       this.props.dispatch(startLoadingPost())
       
+    }
+    logout()
+    {
+      fire.auth().signOut();
+    }
+    authListener()
+    { fire.auth().onAuthStateChanged((user)=>{
+        if(user)
+        {
+
+
+          this.setState({user});
+        }
+        else{
+          this.setState({user:null})
+        }
+
+
+
+
+
+
+
+    })
+
+
+
+
+
     }
   render() {
   
     return (
       <div>
-     <Route exact path="/" render={()=>(
+        <button onClick={this.logout}>Logout</button>
+          {this.state.user?(    <Route exact path="/" render={()=>(
        <div>
          
 
         <Header title={'Explore..'}/>
         
-        {console.log(this.props.comments)}
+      
        <Home {...this.props}/> {/* split individual prop */}
         </div>
-      )}/>
-      <Route path="/Add" render={({history})=>(
+      )}/>):(<Sign/>)}
+     
+     {this.state.user?(<Route path="/Add" render={({history})=>(
         <Add {...this.props}/>
-      )}/>
+      )}/>):(alert("Please login to add images"))}
+
+
+
+
+      
+
+      
       
         <Route path="/pop/:id" render={(params)=>(
 

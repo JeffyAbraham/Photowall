@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Main from './components/Main';
-import './styles/style.css'
 import {BrowserRouter} from 'react-router-dom'
 import{createStore,applyMiddleware} from 'redux'
 import rootReducer from './redux/reducer'
